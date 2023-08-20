@@ -1,0 +1,105 @@
+body{
+    background-color: rgb(212, 209, 209);
+    padding: 5% 10%;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Passion One', cursive;
+   
+}
+
+.container{
+    display: grid;
+    /* grid-template-columns: 45% 55%; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
+border-radius: 10px;
+background-color: white;
+box-shadow: 2px 2px 20px grey;
+}
+h1{
+    color: rgb(30, 146, 172);
+}
+.grid_1{
+    background-image: url(./pexels-photo-8015243.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  border-radius: 10px 0px 0px 10px;
+    
+}
+.grid_2{
+    padding: 5% 10%;
+}
+.form{
+display: flex;
+justify-content: center;
+
+}
+fieldset legend{
+    color: rgb(12, 13, 13);
+}
+fieldset{
+    border: 2px solid rgb(108, 190, 209);
+    border-radius: 5px;
+    background-color: rgb(232, 240, 254);
+
+}
+fieldset:hover{
+    border: 2px solid rgb(30, 146, 172);
+}
+fieldset input{
+    width: 100%;
+    border: none;
+    outline: 0px;
+    background-color: rgb(232, 240, 254);
+}
+label{
+    font-size: 10px
+}
+input[type="submit"]{
+    background-color: rgb(30, 146, 172);
+    border: none;
+    padding: 2% 5%;
+    margin-left: 28%;
+    margin-top: 2%;
+    width: 40%;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+}
+.terms{
+    display: flex;
+    align-items: center;
+}
+input[type="checkbox"]{
+    accent-color: rgb(30, 146, 172);
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgb(41, 187, 220);
+}
+a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    justify-content: space-around;
+    background-color: rgb(232, 234, 237);
+    padding: 5px 10px;
+    font-size: 13px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+a img{
+    width: 20px;
+}
+a:hover{
+    background-color: rgb(218, 221, 225);
+
+}
+span{
+    color: rgb(30, 146, 172);
+}
+.login{
+    display: flex;
+    justify-content: center;
+}
