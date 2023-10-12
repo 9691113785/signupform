@@ -1,6 +1,7 @@
 body{
     background-color: rgb(212, 209, 209);
-    padding: 5% 10%;
+   pad: 0px;
+   margin: 0px;
     font-family: 'Oswald', sans-serif;
     font-family: 'Passion One', cursive;
    
@@ -10,7 +11,7 @@ body{
     display: grid;
     /* grid-template-columns: 45% 55%; */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  
+  margin: 2% 10%;
 border-radius: 10px;
 background-color: white;
 box-shadow: 2px 2px 20px grey;
@@ -55,15 +56,17 @@ label{
     font-size: 10px
 }
 input[type="submit"]{
+    display: flex;
+    justify-content: center;
     background-color: rgb(30, 146, 172);
     border: none;
     padding: 2% 5%;
-    margin-left: 28%;
-    margin-top: 2%;
+   margin: auto;
     width: 40%;
     border-radius: 3px;
     color: white;
     font-weight: bold;
+    margin-top: 1%;
 }
 .terms{
     display: flex;
@@ -102,4 +105,75 @@ span{
 .login{
     display: flex;
     justify-content: center;
+}
+
+input[type="file"]::file-selector-button{
+   display: none;
+}
+.browsebtn{
+    background-color: rgb(172, 80, 30);
+    border: none;
+    padding: 5px 5%;
+    border-radius: 1px;
+    color: white;
+    font-weight: bold;
+    width: 35%;
+    text-align: center;
+    margin-right: 2%;
+}
+.browsecontainer{
+    display: flex;
+    align-items: center;
+   
+}
+
+
+/* navbar styling */
+
+header{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px 0px ;
+    margin: 0px;
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    color: wheat;
+    font-size: 1.2em;
+    height: 30px;
+}
+header>span{
+    text-align: center;
+    color: wheat;
+}
+header>span:hover{
+    color: red;
+    cursor: pointer;
+    color: rgb(30, 146, 172);
+    
+}
+ul{
+   
+   list-style: none;
+   background-color: rgb(30, 146, 172);
+   text-align: center;
+   margin-left: 2%;
+   margin-top: 5%;
+   width: 90%;
+   display: none;
+   padding: 0px;
+   color: white;
+}
+span:hover>ul{
+    display: block;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -1%;
+}
+
+#formsubmit>span{
+    color: red;
 }
